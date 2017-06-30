@@ -11,3 +11,6 @@ In `/etc/coreos/update.conf`-
 ```
 REBOOT_STRATEGY=reboot
 ```
+
+## `etcd-lock` strategy
+If using the `etcd-lock` strategy, and if you need to modify the `locksmithd` (locksmith daemon) config after boot, add a systemd drop-in and reload systemd, `systemctl daemon-restart` and finally restart the locksmith daemon, `systemctl restart locksmithd.service`. See full [description](https://coreos.com/os/docs/latest/using-systemd-drop-in-units.html).
