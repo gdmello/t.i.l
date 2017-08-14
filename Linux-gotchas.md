@@ -11,7 +11,7 @@ $ ls -atl
 -rwxr-xr-x    1 root     root      12049930 Aug 14 18:43 remote_storage_adapter
 ```
 
-Learnt `ldd` via colleague and discovered it was looking for external libraraires which do not exist-
+Learnt `ldd` via colleague (@kevinjqiu) and discovered it was looking for external libraraires which do not exist-
 ```
 $ ldd remote_storage_adapter 
 	/lib64/ld-linux-x86-64.so.2 (0x7ff335ac2000)
