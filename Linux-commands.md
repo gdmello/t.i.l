@@ -8,7 +8,7 @@ Search for a process by name
 
 Send SIGHUP signal to a process
 -------------------------------
-```kill SIGHUP `pgrep etcd```
+```kill SIGHUP `pgrep etcd` ```
 
 Default file permissions for new files
 --------------------------------------
