@@ -27,3 +27,9 @@ Octal value : Permission
 In symbolic format it is -
 `umask u=rwx,g=,o=`
 https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html
+
+Remote Characters
+-----------------
+`kubectl get cm my-config-map | jq '.data.release' | tr -d '"'`
+returns the JSON string without quotes.
+single quotes are not base64 ecoded.
