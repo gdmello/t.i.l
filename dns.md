@@ -1,6 +1,9 @@
+Basics
+======
 FQDN - <hostname>.<domain_name>.<domain_suffix>
 e.g- west.techrepublic.com
 FQDN uniquely identifies the host within the DNS namespace.
+The domain is not limited to a single level - can be redis.west.techrepublic.com, where west.techrepublic is the domain portion.
 
 Design
 ======
