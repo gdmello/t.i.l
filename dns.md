@@ -47,7 +47,7 @@ Record Types
 ============
 
 A DNS nameserver contains a listing of hostnames to IP addresses. But these records can be of other types too. See -
-
+```
 +--------+--------------------------------------------------------------------------------------+
 | Record |                                       Purpose                                        |
 +--------+--------------------------------------------------------------------------------------+
@@ -75,6 +75,7 @@ A DNS nameserver contains a listing of hostnames to IP addresses. But these reco
 | WINS-R | Reverses lookup through WINS server                                                  |
 | ATMA   | Maps domain name to ATM address                                                      |
 +--------+--------------------------------------------------------------------------------------+
+```
 Source - https://www.techrepublic.com/article/understanding-how-dns-works-part-1/
 
 Most common record types are SOA, A, CNAME. A record type maps a host name to an IP address. 
