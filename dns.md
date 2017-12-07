@@ -3,7 +3,7 @@ e.g- west.techrepublic.com
 
 Design
 ======
-
+```
 +------------------------+
 |      Root Servers      |
 | (.com,.net, .org,      |
@@ -24,7 +24,7 @@ Design
    |                  |           |                  |
    |                  |           |                  |
    +------------------+           +------------------+
-
+```
 * Root servers are primary servers which manage top level domains
 * Root servers typically delegate to authoritative named servers for specific domains
 * Authoritative named servers delegate the DNS lookup to an org that owns the domain or the ISP which provides the internet connection to the organization.
