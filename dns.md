@@ -79,4 +79,4 @@ A DNS nameserver contains a listing of hostnames to IP addresses. But these reco
 Source - https://www.techrepublic.com/article/understanding-how-dns-works-part-1/
 
 Most common record types are SOA, A, CNAME. A record type maps a host name to an IP address. 
-While the CNAME record type maps an alias to a FQDN (Fully Qualified Domain Name)
+While the CNAME record type maps an alias to a FQDN (Fully Qualified Domain Name).
