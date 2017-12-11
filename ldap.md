@@ -31,6 +31,7 @@ is `cn=ipad7,ou=tablets,dc=apple,dc=com`
 
 The Relative DN or RDN is comprimsed mostly of the Common Name or cn attribute.
 
+Example of an LDAP Directory entry-
 ```
     dc=foobar, dc=com 
         ou=customers 
