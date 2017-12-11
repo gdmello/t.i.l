@@ -8,9 +8,24 @@ http://www.ldapman.org/articles/intro_to_ldap.html
 Entries
 =======
 
-Since LDAP entries are heirarchical, they have to have a root. 
-LDAP Directory records include a `Distinguished Name`, similar to DNS host names. 
-The root record is known as a base DN. 
+Since LDAP entries are heirarchical, they have to have a root.  
+The top level record is known as a `base DN`. The base DN has 3 different forms-
+
+`o=Apple,c=US` - 'o' or Organization and 'c' Country
+`o=apple.com` - use the company's domain name
+`dc=apple,dc=com` - split the company's domain name, default when using Microsoft AD.
+
+Every LDAP Directory record include a `Distinguished Name` or DN, similar to DNS host names.
+The DN includes two components - Relative DN and LDAP Directory location of that record, and is read
+backwards, ie a bottom up approach.
+e.g - The DN of this record-
+* dc=apple,dc=com
+* ou=tablets (Organizational Unit)
+* cn=ipad7
+
+is `cn=ipad7,ou=tablets,dc=apple,dc=com`
+
+The root
 
 ```
     dc=foobar, dc=com 
