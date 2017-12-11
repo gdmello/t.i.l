@@ -8,6 +8,8 @@ http://www.ldapman.org/articles/intro_to_ldap.html
 Entries
 =======
 
+top level entry/root
+--------------------
 Since LDAP entries are heirarchical, they have to have a root.  
 The top level record is known as a `base DN`. The base DN has 3 different forms-
 
@@ -15,6 +17,8 @@ The top level record is known as a `base DN`. The base DN has 3 different forms-
 `o=apple.com` - use the company's domain name
 `dc=apple,dc=com` - split the company's domain name, default when using Microsoft AD.
 
+Directory record
+----------------
 Every LDAP Directory record include a `Distinguished Name` or DN, similar to DNS host names.
 The DN includes two components - Relative DN and LDAP Directory location of that record, and is read
 backwards, ie a bottom up approach.
