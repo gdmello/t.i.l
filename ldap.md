@@ -29,7 +29,7 @@ e.g - The DN of this record-
 
 is `cn=ipad7,ou=tablets,dc=apple,dc=com`
 
-The root
+The Relative DN or RDN is comprimsed mostly of the Common Name or cn attribute.
 
 ```
     dc=foobar, dc=com 
