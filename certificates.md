@@ -41,5 +41,18 @@ CSR = Certificate Signing Request
 
 Format
 ======
-Certificates follow the X.509 format. Using OpenSSL to generate a certificate results in a *.crt* (Certificate) and *.csr* (CSR) file. Both files are in the PEM format. PEM is an ASCII encoding, other encodings include DER, PKCS7, PKCS12.
+Certificates follow the X.509 format. Using OpenSSL to generate a certificate results in a *.crt* (Certificate) and *.csr* (CSR) file. Both files are in the PEM format. PEM is a base64 (ASCII) encoding, other encodings include DER, PKCS7, PKCS12.
+
+PEM
+---
+A pem file can contain a number of certificates and a key, [source](http://how2ssl.com/articles/working_with_pem_files/)-
+* public certificate
+* root certificate
+* intermediate certificate
+* private key
+
+Sources
+=======
+https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
+http://how2ssl.com/articles/openssl_commands_and_tips/
 
