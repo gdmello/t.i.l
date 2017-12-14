@@ -21,3 +21,25 @@ In order to secure a webite to use SSL,
 * a certificate is required from a certificate authority (CA), or 
 * the certificate is self-signed to bypass a CA.
 
+Self-signed Certificates
+------------------------
+* Used only to secure traffic to a service
+* cannot be used to determine servers identity
+* useful for non-production or non-public servers
+
+CA-signed Certificates
+----------------------
+* Used to secure production and public servers
+* An external authority validates the identity of the server
+
+Both CA and Self signed certificates can be generated in any of these ways-
+* CSR and a private key
+* CSR and exisitng private key
+* CSR from existing certificate and private key
+
+CSR = Certificate Signing Request
+
+Format
+======
+Certificates follow the X.509 format. Using OpenSSL to generate a certificate results in a *.crt* (Certificate) and *.csr* (CSR) file. Both files are in the PEM format. PEM is an ASCII encoding, other encodings include DER, PKCS7, PKCS12.
+
