@@ -57,7 +57,7 @@ TLS Flow
 * webserver returns public key and certificate
 * browser possesses the public key of the CA and verifies the CA signature in the Certificate and thus trusts the certificate
 and the public key in it.
-* Broweser then uses the public key to enrcypt/decrypt data to/from the webserver (maybe with a temporary symmetric key)
+* Browser then uses the public key to enrcypt/decrypt data to/from the webserver (maybe with a temporary symmetric key)
 
 Format
 ======
