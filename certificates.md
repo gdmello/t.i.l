@@ -39,6 +39,19 @@ Both CA and Self signed certificates can be generated in any of these ways-
 
 CSR = Certificate Signing Request
 
+Certificate Authorities (CAs)
+=============================
+* A CA generates and validates digital certificates
+* The CA adds it's own signature to the public key of the client, essentially indicating that the public key is valid
+* Examples of CA are - VeriSign, Entrust and GlobalSign
+
+Obtain a Certificate
+--------------------
+1. Requestor requests a certificate from CA
+2. CA authenticates requestor and issues a digital certificate
+3. CA publishes the certificate in a public certificate store, so message receiver can authenticate the CA
+
+
 Format
 ======
 Certificates follow the X.509 format. Using OpenSSL to generate a certificate results in a *.crt* (Certificate) and *.csr* (CSR) file. Both files are in the PEM format. PEM is a base64 (ASCII) encoding, other encodings include DER, PKCS7, PKCS12.
@@ -56,4 +69,5 @@ Sources
 * https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
 * http://how2ssl.com/articles/openssl_commands_and_tips/
 * https://www.scientificcomputing.com/blog/2007/11/understanding-digital-certificates-beginner%E2%80%99s-guide
+* http://www.tech-faq.com/understanding-certificate-authorities.html
 
