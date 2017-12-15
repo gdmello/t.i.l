@@ -20,6 +20,7 @@ HTTPs
 In order to secure a webite to use SSL,
 * a certificate is required from a certificate authority (CA), or 
 * the certificate is self-signed to bypass a CA.
+* A certificate is just a public key with additional information
 
 Self-signed Certificates
 ------------------------
