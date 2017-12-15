@@ -42,7 +42,7 @@ CSR = Certificate Signing Request
 Certificate Authorities (CAs)
 =============================
 * A CA generates and validates digital certificates
-* The CA adds it's own signature to the public key of the client, essentially indicating that the public key is valid
+* The CA adds it's own signature to the public key of the client, essentially indicating that the public key is valid. 
 * Examples of CA are - VeriSign, Entrust and GlobalSign
 
 Obtain a Certificate
@@ -51,6 +51,13 @@ Obtain a Certificate
 2. CA authenticates requestor and issues a digital certificate
 3. CA publishes the certificate in a public certificate store, so message receiver can authenticate the CA
 
+TLS Flow
+--------
+* Browser makes request to webserver
+* webserver returns public key and certificate
+* browser possesses the public key of the CA and verifies the CA signature in the Certificate and thus trusts the certificate
+and the public key in it.
+* Broweser then uses the public key to enrcypt/decrypt data to/from the webserver (maybe with a temporary symmetric key)
 
 Format
 ======
