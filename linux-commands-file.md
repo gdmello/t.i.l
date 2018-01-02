@@ -15,3 +15,21 @@ Change: 2018-01-02 16:48:16.265308219 +0000
 ```
 
 Used to determine if group id changes took hold after changing docker gid from 233 to 999.
+
+Default file permissions for new files
+--------------------------------------
+`umask` - The user file-creation mode mask (umask) is use to determine the file permission for newly created files.
+In the Octal format it is `022`-
+Octal value : Permission
+* 0 : read, write and execute
+* 1 : read and write
+* 2 : read and execute
+* 3 : read only
+* 4 : write and execute
+* 5 : write only
+* 6 : execute only
+* 7 : no permissions
+
+In symbolic format it is -
+`umask u=rwx,g=,o=`
+https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html
