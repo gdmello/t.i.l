@@ -19,3 +19,8 @@ single quotes are not base64 ecoded.
 Show/ Manipulate routing, devices, policy routing and tunnels
 -------------------------------------------------------------
 ip -addr
+
+Print Logs From Kernel Ring Buffer
+----------------------------------
+
+dmesg
