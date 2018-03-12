@@ -17,4 +17,5 @@ prototype.person.adult = function() { if (age > 21) {return true}}
 
 Copy Object properties
 ----------------------
-To copy all properties from *object1* to *object2* use - `Object.assign(object1, object2)`
+To copy all properties from *object1* to *object2* use [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) - 
+`Object.assign(object1, object2)`
