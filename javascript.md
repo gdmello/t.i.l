@@ -24,7 +24,7 @@ function Teacher(name, age, school) {
    this.school = school
 }
 ```
-`Object.call` function enables a prototype constructor call from anywhere in the source and invokes the prototype within the current context.
+`Object.call` function enables a prototype constructor call from anywhere in the source and invokes the prototype within the current context. See furthe details in the reference link.
 
 Copy Object properties
 ----------------------
