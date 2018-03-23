@@ -34,3 +34,8 @@ To copy all properties from *object1* to *object2* use [Object.assign](https://d
 Hoisting
 --------
 [Reference](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+
+Functions vs Methods
+--------------------
+Methods are functions defined as an attribute of an object. [Ref](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+
