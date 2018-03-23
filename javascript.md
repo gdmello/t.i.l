@@ -9,10 +9,35 @@ Global scope is top level above all functions.
 Objects
 =======
 
-Declaration
------------
+Initilaization
+--------------
+Objects can be initialized with the *Object initializer* or *literal*, as below-
 ```javascript
 var myObj = {};
+var tom = {
+   name: 'Thomas',
+   age: 40
+};
+```
+or with a *constructor function*-
+```javascript
+function Person(name, age) {
+   this.name = name,
+   this.age = age
+};
+
+var jack = new Person('jack', 23);
+```
+or with `Object.create()`-
+```javascript
+var Car = {
+   type: 'sedan'
+   mode: 'sports'
+};
+
+mustang = Object.create(Car)
+mustang.type = 'convertible'
+
 ```
 
 Accessing Properties
@@ -44,6 +69,10 @@ Copy Object properties
 ----------------------
 To copy all properties from *object1* to *object2* use [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) - 
 `Object.assign(object1, object2)`
+
+Getters And Setters
+-------------------
+[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
 
 Prototypes
 ==========
