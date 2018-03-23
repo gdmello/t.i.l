@@ -48,6 +48,11 @@ To copy all properties from *object1* to *object2* use [Object.assign](https://d
 Prototypes
 ==========
 
+Types
+-----
+Class-based languages are founded on two entities - *Classes* and *instances* of those classes.
+Prototype languages are founded on one entity - objects, such a lamguage has the notion of a *Prototype* object which serves as a template for all other objects. Properties and methods can be added to these objects. [Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)
+
 Basics
 ------
 All Javascript objects inherit from a prototype object. Array from `Array.prototype`, string from `string.prototype`.
