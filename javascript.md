@@ -1,3 +1,33 @@
+Basics
+======
+
+Scope
+-----
+Global or function scope.
+Global scope is top level above all functions.
+
+Objects
+=======
+
+Declaration
+-----------
+```javascript
+var myObj = {};
+```
+
+Accessing Properties
+--------------------
+```javascript
+var person = {
+   name: 'ham'
+   age: 29
+};
+
+person.name;   // Dot notation
+person['name'] // Bracket notation
+```
+
+
 Prototype
 ---------
 All Javascript objects inherit from a prototype object. Array from `Array.prototype`, string from `string.prototype`.
