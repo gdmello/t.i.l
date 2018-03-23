@@ -40,8 +40,16 @@ var person = {
 };
 ```
 
-Prototype
----------
+Copy Object properties
+----------------------
+To copy all properties from *object1* to *object2* use [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) - 
+`Object.assign(object1, object2)`
+
+Prototypes
+==========
+
+Basics
+------
 All Javascript objects inherit from a prototype object. Array from `Array.prototype`, string from `string.prototype`.
 
 To add a new property to all instances of an object, modify the objects prototype as-
@@ -67,11 +75,6 @@ function Teacher(name, age, school) {
 }
 ```
 `Object.call` function enables a prototype constructor call from anywhere in the source and invokes the prototype within the current context. See furthe details in the reference link.
-
-Copy Object properties
-----------------------
-To copy all properties from *object1* to *object2* use [Object.assign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) - 
-`Object.assign(object1, object2)`
 
 Hoisting
 --------
