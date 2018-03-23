@@ -35,7 +35,17 @@ Hoisting
 --------
 [Reference](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
+Functions
+=========
+
 Functions vs Methods
 --------------------
 Methods are functions defined as an attribute of an object. [Ref](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 
+Anonymous Functions
+-------------------
+```javascript
+button.onClick = function() {
+  console.log('Hi');
+}
+```
