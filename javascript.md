@@ -19,7 +19,7 @@ Accessing Properties
 --------------------
 ```javascript
 var person = {
-   name: 'ham'
+   name: 'ham',
    age: 29
 };
 
@@ -27,6 +27,18 @@ person.name;   // Dot notation
 person['name'] // Bracket notation
 ```
 
+`this` keyword
+--------------
+Represents the current object
+```javascript
+var person = {
+   firstName: 'jack',
+   lastName: 'jones',
+   fullName: function() {
+         return this.firstName + this.lastName;
+   }
+};
+```
 
 Prototype
 ---------
