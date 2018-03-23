@@ -65,8 +65,10 @@ function Person(name, age) { // object constructor
 }
 
 prototype.person.gender = "M/F"
-
 prototype.person.adult = function() { if (age > 21) {return true}}
+
+var person1 = new Person('Jane', 30)
+
 ```
 [Ref](https://www.w3schools.com/js/js_object_constructors.asp)
 
