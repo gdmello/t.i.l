@@ -158,7 +158,19 @@ mercedes = var class {
 ```
 [Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
+Subclassing
+-----------
+* Possible with the `extends` keyword.
+* Works on both classes defined with the `class` keyword or via an expression.
+* `species` property enables subclass to override the default constructor of an object.
+* ECMAScript classes can only inherit from a single class.
+
 Tips & Tricks
 =============
 
 * [Method Definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) Short hand for assigning functions to object attributes.
+* `[species](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species)` property enables subclass to override the default constructor of an object.
+
+Reference
+=========
+* [Standard Built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
