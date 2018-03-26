@@ -130,3 +130,29 @@ button.onClick = function() {
   console.log('Hi');
 }
 ```
+
+Classes
+=======
+* Not hoisted like functions
+```javascript
+var c = new Car(); //Error
+
+class Car{}
+```
+* Can we declared with the class keyword or via an expression
+```javascript
+class Mercedes {
+constructor(name, model) {
+...
+}
+};
+``` or
+``` javascript
+mercedes = var class Mercedes{
+...
+}; //named
+
+mercedes = var class {
+...
+}// unnamed
+```
