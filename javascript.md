@@ -118,6 +118,29 @@ Hoisting
 
 Functions
 =========
+Funtions can be defined in three ways-
+* `Function declaration` statement
+```javascript
+function add(num1, num2) {
+   return num1 + num2;
+}
+```
+* *Function expressions*
+```javascript
+let func = function(num1, num2) {
+   return num1 + num2;
+}
+```
+* *Arrow function*
+```javascript
+let func = (num1, num2) => {
+   return num1 + num2;
+}
+
+let newfunc = () => {
+   alert('hi!');
+}
+```
 
 Functions vs Methods
 --------------------
@@ -135,6 +158,10 @@ Asynchronous Functions
 * [callbacks](https://javascript.info/callbacks) - *Medieval times*
 * [Promise](https://javascript.info/promise-basics), and [Promise chaining](https://javascript.info/promise-basics)
 * [Async/ await](https://javascript.info/async-await)
+
+Arrow Functions
+---------------
+
 
 Classes
 =======
