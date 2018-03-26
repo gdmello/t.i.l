@@ -142,9 +142,9 @@ class Car{}
 * Can we declared with the class keyword or via an expression
 ```javascript
 class Mercedes {
-constructor(name, model) {
-...
-}
+   constructor(name, model) {
+    ...
+   }
 };
 ``` or
 ``` javascript
@@ -154,5 +154,11 @@ mercedes = var class Mercedes{
 
 mercedes = var class {
 ...
-}// unnamed
+}; // unnamed
 ```
+[Ref](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+Tips & Tricks
+=============
+
+* [Method Definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) Short hand for assigning functions to object attributes.
