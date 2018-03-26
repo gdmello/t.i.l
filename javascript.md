@@ -130,6 +130,11 @@ button.onClick = function() {
   console.log('Hi');
 }
 ```
+Asynchronous Functions
+----------------------
+* [callbacks](https://javascript.info/callbacks) - *Medieval times*
+* [Promise](https://javascript.info/promise-basics), and [Promise chaining](https://javascript.info/promise-basics)
+* [Async/ await](https://javascript.info/async-await)
 
 Classes
 =======
@@ -170,6 +175,7 @@ Tips & Tricks
 
 * [Method Definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) Short hand for assigning functions to object attributes.
 * `[species](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species)` property enables subclass to override the default constructor of an object.
+* `[Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)`
 
 Reference
 =========
