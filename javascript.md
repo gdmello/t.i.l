@@ -197,6 +197,25 @@ Subclassing
 * `species` property enables subclass to override the default constructor of an object.
 * ECMAScript classes can only inherit from a single class.
 
+Modules
+=======
+
+Export/ Import
+--------------
+A class can be one of the objects exported by a module. Here is a way to import the Class properties directly -
+```javascript
+// a.js
+class A {
+...
+}
+A.new_prop1 = "some_prop1";
+A.new_prop2 = "some_prop2";
+
+//b.js
+const {new_prop1, new_prop2 } = require('a.js');
+
+```
+
 Tips & Tricks
 =============
 
