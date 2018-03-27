@@ -216,8 +216,8 @@ class B {
 https://medium.com/@thejasonfile/a-simple-intro-to-javascript-imports-and-exports-389dd53c3fac
 
 module.exports = {
-A,
-B
+  A,
+  B
 }
 //b.js
 const { A, B } = require('a.js');
