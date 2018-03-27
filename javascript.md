@@ -203,6 +203,7 @@ Modules
 Export/ Import
 --------------
 A class can be one of the objects exported by a module. Here is a way to import the Class properties directly -
+[Ref](https://medium.com/@thejasonfile/a-simple-intro-to-javascript-imports-and-exports-389dd53c3fac)
 ```javascript
 // a.js
 class A {
@@ -212,8 +213,6 @@ class A {
 class B {
 ...
 }
-
-https://medium.com/@thejasonfile/a-simple-intro-to-javascript-imports-and-exports-389dd53c3fac
 
 module.exports = {
   A,
