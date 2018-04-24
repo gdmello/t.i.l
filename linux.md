@@ -1,8 +1,15 @@
 Basics
 ======
+Process/ Streams
+----------------
+A Command in linux is associated with a Program to be run. A [Process](http://www.linfo.org/process.html) is a running instance of a Program, and every process is initialized with 3 data streams-
+* standard in (stdin)
+* standard out (stdout)
+* standard error (stderr)
+
 Pipes
 -----
-Transfer output from one program to another. Good source - http://www.linfo.org/pipes.html
+A form of [redirection](http://www.linfo.org/redirection.html), to transfer output from one program to another. Usually implies that it modifes the default standard stream of data for a program. Good source - http://www.linfo.org/pipes.html
 
 Reaping
 =======
