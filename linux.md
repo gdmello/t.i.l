@@ -1,11 +1,16 @@
 Basics
 ======
+
 Process/ Streams
 ----------------
 A Command in linux is associated with a Program to be run. A [Process](http://www.linfo.org/process.html) is a running instance of a Program, and every process is initialized with 3 data streams-
 * standard in (stdin)
 * standard out (stdout)
 * standard error (stderr)
+
+Process Spawning
+----------------
+A process can create another process through spawning, i.e. through the system command `fork`, since the process is actually split in two. A full copy of the first process is made and then handed over to the new process, which in turn can spawn another process and give a copy of itself, resulting in different generations of the process. This is similar to a directory/ file tree structure. A very good explanation is [here](http://www.linfo.org/process.html).
 
 Pipes
 -----
