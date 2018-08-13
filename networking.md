@@ -20,3 +20,11 @@ To be able to store the numbers 0-255 as bits would require a bit pattern of at 
 
 So, a single IPv4 address, consisting of 4 numbers, would require `4*8` or 32 bits of storage.
 Taking this further, 32 bits gives us 2<sup>32</sup> patterns, which is the total number of IP addresses possible in the IPv4 range.
+
+CIDR (Classless Inter-Domain Routing) Notation
+==============================================
+
+CIDR was developed as an alternative to Class based subnets.
+The idea here is that, the CIDR notation could be used to define a subnet by specifying the number of bits that make up the network portion of an IP address. An IP address comprises a networking and a host portion.
+
+So, given an IP address - `192.168.0.16`, the subnet `192.168.0.0` could be defined as - `192.168.0.15/24`
