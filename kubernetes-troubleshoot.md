@@ -18,4 +18,23 @@ Aug 27 13:44:42 m7.k8s.domain.com kubelet-wrapper[14041]: , diff2={"status":{"$s
 Aug 27 13:44:42 m7.k8s.domain.com kubelet-wrapper[14041]:  diff1={"metadata":{"annotations":{"container-linux-update.v1.coreos.com/status":"UPDATE_STATUS_CHECKING_FOR_UPDATE"},"resourceVersion":"69045036"},"status":{"$setElementOrder/conditions":[{"type":"OutOfDisk"},{"type":"M
 Aug 27 13:44:42 m7.k8s.domain.com kubelet-wrapper[14041]:
 ```
-indicating an issue between master nodes and etc servers
+indicating an issue between master nodes and etc servers. And sure enough-
+```
+$ docker inspect <apiserver container id> | grep -i "etcd-servers"
+--etcd-servers=https://etc17.k8s.domain.com:2379,https://etc18.k8s.domain.com:2379,https://etc19.k8s.domain.com:2379,https://etc20.k8s.domain.com:2379,https://etc21.k8s.domain.com:2379",
+$ docker inspect <apiserver container id> | grep -i "etcd-cafile"
+--etcd-cafile=/etc/kubernetes/secrets/etcd-client-ca.crt
+```
+The cert file above refers to an in-container path, to determine the host path, run `docker inspect` on the container again and look up the mount-
+```
+$ docker inspect <apiserver container id> | grep -i ":/etc/kubernetes/secrets"
+                "/var/lib/kubelet/pods/82a3f904-ed11-11e7-8861-5254007164d2/volumes/kubernetes.io~secret/secrets:/etc/kubernetes/secrets:ro,Z",
+```
+Verify connectivity to the etcd node-
+```
+$ sudo curl https://etc18.k8s.domain.com:2379 --cacert /var/lib/kubelet/pods/82a3f904-ed11-11e7-8861-5254007164d2/volumes/kubernetes.io~secret/secrets/etcd-client-ca.crt
+404 page not found
+$ dig +short etc18.k8s.domain.com
+$
+```
+Voila! confirms etcd is not accessible.
