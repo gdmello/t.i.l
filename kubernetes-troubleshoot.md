@@ -34,7 +34,5 @@ Verify connectivity to the etcd node-
 ```
 $ sudo curl https://etc18.k8s.domain.com:2379 --cacert /var/lib/kubelet/pods/82a3f904-ed11-11e7-8861-5254007164d2/volumes/kubernetes.io~secret/secrets/etcd-client-ca.crt
 404 page not found
-$ dig +short etc18.k8s.domain.com
-$
 ```
 Voila! confirms etcd is not accessible.
