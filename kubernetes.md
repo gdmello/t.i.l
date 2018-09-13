@@ -7,3 +7,6 @@
   * provision a DNS record under the domain *'example.com'* or
   * provision a resource under the URI *'http.example.com'*
 * If deploying k8s on AWS, *Route53* can be used as the DNS responder.
+
+# Custom Controllers
+* https://engineering.bitnami.com/articles/a-deep-dive-into-kubernetes-controllers.html
