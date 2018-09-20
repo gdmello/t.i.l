@@ -30,4 +30,4 @@ Filesystem
 
 Inodes
 ------
-Linux stores quite a bit of information about each file, such as - name, updation/deletion date, access, permissions in a strucure called an inode or index node. [See](https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html)
+Linux stores quite a bit of information about each file, such as - name, updation/deletion date, access, permissions in a strucure called an inode or index node. [See here](https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html).
