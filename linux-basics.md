@@ -25,3 +25,9 @@ Reaping
 * The process of calling `waitpid()` on a child to avoid it being a zombie is called 'reaping'.
 ref - https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/
 
+Filesystem
+==========
+
+Inodes
+------
+Linux stores quite a bit of information about each file, such as - name, updation/deletion date, access, permissions in a strucure called an inode or index node. [See](https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html)
