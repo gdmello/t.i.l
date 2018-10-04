@@ -12,3 +12,7 @@
 [Linux Permissions Basics and How to Use Umask on a VPS](https://www.digitalocean.com/community/tutorials/linux-permissions-basics-and-how-to-use-umask-on-a-vps)
 # Jobs
 * [Job Hound](https://jobhound.io/users/new)
+
+# Kubernetes
+* [Prometheus](./kubernetes-prometheus.md)
+
