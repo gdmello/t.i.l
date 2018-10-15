@@ -36,10 +36,15 @@ kernel.core_pattern=|/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %e
 Once core dump is enabled on a system, a core dump can be created by -
 
 ### Program Crash
-
-vi
+```
+$ ./myprogram
+Floating point exception (core dumped)
+```
 
 ### Kill a running process
-
+Kill a process by [sending](https://linux-audit.com/understand-and-configure-core-dumps-work-on-linux/) the <em>segmentation violation</em>, aka <em>segmentation fault</em> (accessing memory which is not availalbe/ restricted)-
+```
+$ kill -s SIGSEGV PID
+```
 
 ### Using gdb
