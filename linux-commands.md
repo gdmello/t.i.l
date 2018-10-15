@@ -52,5 +52,5 @@ Tail Process Ids
 Tail a file via it's process ID, which is useful if waiting on a process to release a file-
 ```
 $ tail -f --pid=1234 /home/usr/myfile
-$ tail -f --pid=1234 /dev/null
+$ tail -f --pid=1234 /dev/null # Make tail command quit when the PID 1234 dies, useful to wait on a process to terminate.
 ```
