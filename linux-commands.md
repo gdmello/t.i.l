@@ -46,3 +46,11 @@ default via 10.203.0.1 dev eth3  proto static
 172.17.0.0/16 dev docker0  proto kernel  scope link  src 172.17.0.1 
 172.18.0.0/16 dev br-4433db5330c8  proto kernel  scope link  src 172.18.0.1 
 ```
+
+Tail Process Ids
+----------------
+Tail a file via it's process ID, which is useful if waiting on a process to release a file-
+```
+$ tail -f --pid=1234 /home/usr/myfile
+$ tail -f --pid=1234 /dev/null
+```
