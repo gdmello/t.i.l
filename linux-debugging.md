@@ -13,11 +13,13 @@ CONFIG_COREDUMP=y
 The kernel can store all of it's [configuration](https://blog.fpmurphy.com/2015/10/what-is-procconfig-gz.html) in a zipped file - `/proc/config.gz`.
 
 The location for this core dump file can be found in -
-```$ cat /proc/sys/kernel/core_pattern
+```
+$ cat /proc/sys/kernel/core_pattern
 |/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %e
 ```
 On CoreOS this is set in `/usr/lib/sysctl.d/50-coredump.conf` -
-```$ cat /usr/lib/sysctl.d/50-coredump.conf 
+```
+$ cat /usr/lib/sysctl.d/50-coredump.conf 
 #  This file is part of systemd.
 #
 #  systemd is free software; you can redistribute it and/or modify it
