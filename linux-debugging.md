@@ -56,6 +56,8 @@ $ kill -s SIGSEGV PID
 ```
 $ sudo coredumpctl list
 ```
+## References
+https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
 
 # Debugging Docker Containers
 Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/debugging-docker-containers-with-gdb-and-nsenter/).
