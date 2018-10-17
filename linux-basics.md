@@ -12,6 +12,8 @@ Process Spawning
 ----------------
 A process can create another process through spawning, i.e. through the system command `fork`, since the process is actually split in two. A full copy of the first process is made and then handed over to the new process, which in turn can spawn another process and give a copy of itself, resulting in different generations of the process. This is similar to a directory/ file tree structure. A very good explanation is [here](http://www.linfo.org/process.html).
 
+Additional notes - [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
+
 Pipes
 -----
 A form of [redirection](http://www.linfo.org/redirection.html), to transfer output from one program to another. Usually implies that it modifes the default standard stream of data for a program. Good source - http://www.linfo.org/pipes.html
