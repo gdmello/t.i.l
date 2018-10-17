@@ -69,6 +69,7 @@ $ rkt enter `rkt list --format=json | jq .[0].name -r`
 ```
 ## gdb
 [What can you do with gdb?](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html)
+[Debugging with gdb](http://mermaja.act.uji.es/docencia/is37/data/gdb.pdf)
 
 ## References
 https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
