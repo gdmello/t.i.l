@@ -67,10 +67,12 @@ $ rkt enter `rkt list --format=json | jq .[0].name -r`
 //inspect the core dump file via gdb
 # gdb /hyperkube /var/log/core-hyperkube.<kubelet_PID>
 ```
-
+## gdb
+[What can you do with gdb?](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html)
 
 ## References
 https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
+http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 
 # Debugging Docker Containers
 Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/debugging-docker-containers-with-gdb-and-nsenter/).
