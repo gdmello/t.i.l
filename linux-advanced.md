@@ -11,3 +11,7 @@ Linux provides the following [namespaces](http://man7.org/linux/man-pages/man7/n
      UTS         CLONE_NEWUTS      Hostname and NIS domain name
        
 [PID Namespace](http://man7.org/linux/man-pages/man7/pid_namespaces.7.html)
+
+## Enter a Namespace
+
+With [nsenter](http://man7.org/linux/man-pages/man1/nsenter.1.html)!
