@@ -1,5 +1,5 @@
 ## Namespaces
-Linux provides the following [namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html):
+Linux provides the following [namespaces](http://man7.org/linux/man-pages/man7/namespaces.7.html)-
 
      Namespace   Constant          Isolates
      Cgroup      CLONE_NEWCGROUP   Cgroup root directory
