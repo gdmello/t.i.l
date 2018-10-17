@@ -52,5 +52,10 @@ $ kill -s SIGSEGV PID
 ### Using gdb
 
 
+## View Core Dumps
+```
+$ sudo coredumpctl list
+```
+
 # Debugging Docker Containers
 Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/debugging-docker-containers-with-gdb-and-nsenter/).
