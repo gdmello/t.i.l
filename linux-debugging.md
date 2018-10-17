@@ -56,6 +56,19 @@ $ kill -s SIGSEGV PID
 ```
 $ sudo coredumpctl list
 ```
+
+## Example
+Generating a core dump for the kubelet (kyperkube executable) in a CoreOS node (Tectonic spun Kubernetes node)-
+```
+// Assuming only kubelet process is running as a rkt pod, find and enter the pod
+$ rkt enter `rkt list --format=json | jq .[0].name -r`
+# apt-get update && apt-get install -y gdb
+# gcore -o /var/log/core-hyperkube `pgrep kubelet` 
+//inspect the core dump file via gdb
+# gdb /hyperkube /var/log/core-hyperkube.<kubelet_PID>
+```
+
+
 ## References
 https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
 
