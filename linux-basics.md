@@ -11,10 +11,10 @@ A process can create another process through spawning, i.e. through the system c
 
 Additional notes - [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
 
-#Pipes
+## Pipes
 A form of [redirection](http://www.linfo.org/redirection.html), to transfer output from one program to another. Usually implies that it modifes the default standard stream of data for a program. Good source - http://www.linfo.org/pipes.html
 
-#Reaping
+## Reaping
 * Linux kernel boots an init process on startup, i.e. a process which has no parent process.
 * Each parent process might spawn one or more child processes, similar to a tree structure.
 * When each child process terminates after completion, the parent process must wait on the child process to collect information like it's exit code.
@@ -22,8 +22,8 @@ A form of [redirection](http://www.linfo.org/redirection.html), to transfer outp
 * The process of calling `waitpid()` on a child to avoid it being a zombie is called 'reaping'.
 ref - https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/
 
-##Filesystem
+## Filesystem
 
-###Inodes
+### Inodes
 Linux stores quite a bit of information about each file, such as - name, updation/deletion date, access, permissions in a strucure called an inode or index node. [See here](https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html).
 
