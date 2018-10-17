@@ -59,3 +59,6 @@ $ sudo coredumpctl list
 
 # Debugging Docker Containers
 Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/debugging-docker-containers-with-gdb-and-nsenter/).
+
+## Force a stack trace to be logged
+[Force stack trace](https://docs.docker.com/config/daemon/#force-a-stack-trace-to-be-logged)
