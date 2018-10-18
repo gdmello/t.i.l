@@ -54,3 +54,26 @@ Tail a file via it's process ID, which is useful if waiting on a process to rele
 $ tail -f --pid=1234 /home/usr/myfile
 $ tail -f --pid=1234 /dev/null # Make tail command quit when the PID 1234 dies, useful to wait on a process to terminate.
 ```
+
+Check Host Is Up
+----------------
+```
+$ nmap c3.domain.com
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2018-10-18 15:11 EDT
+Nmap scan report for c3.domain.com (10.70.180.63)
+Host is up (0.0012s latency).
+Not shown: 991 filtered ports
+PORT     STATE  SERVICE
+22/tcp   closed ssh
+53/tcp   open   domain
+80/tcp   open   http
+113/tcp  closed ident
+443/tcp  open   https
+2000/tcp open   cisco-sccp
+5060/tcp open   sip
+8008/tcp open   http
+9418/tcp closed git
+
+Nmap done: 1 IP address (1 host up) scanned in 4.66 seconds
+```
