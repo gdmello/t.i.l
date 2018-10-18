@@ -83,7 +83,7 @@ $ rkt enter `rkt list --format=json | jq .[0].name -r`
 https://jvns.ca/blog/2018/04/28/debugging-a-segfault-on-linux/
 http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html
 
-# Debugging Docker Containers
+## Debugging Docker Containers
 Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/debugging-docker-containers-with-gdb-and-nsenter/).
 
 ## Force a stack trace to be logged
@@ -93,7 +93,7 @@ From @rajiteh-
 pgrep -f /kubelet | xargs -I{} bash -c 'cat /proc/{}/task/*/stack'
 pgrep -f /kubelet | xargs -I{} bash -c 'ls -1 /proc/{}/task/ | xargs -I% bash -c "echo --- pid {} task % ---; cat
 ```
-# Procs
+# Process (/procs)
 View details of a running process-
 ```
 $ pgrep kubelet 
@@ -104,6 +104,11 @@ $ ls -l /procs/810/cmdline #view the command line
 ```
 [Source]($ ls -l /procs/810/exe #view trhe executable)
 
+# TCP Dump (tcpdump)
+```
+$ tcpdump -i any port 53 <-- listen on any interface at port 53 (TCP port)
+```
+[Source](https://jvns.ca/blog/2017/06/26/3-screencasts/)
 # Awesome References
 
 [Linux debugging tools I love - Julia Evans](https://jvns.ca/blog/2016/07/03/debugging-tools-i-love/)
