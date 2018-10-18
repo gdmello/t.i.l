@@ -2,7 +2,7 @@
 
 http://www.brendangregg.com/Perf/linux_perf_tools_full.png
 
-# strace
+# Trace (strace)
 Debug all the system calls made by a program. Slows down a program, as it pauses the program before and after each system call.
 System [calls](http://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html)
 
@@ -93,6 +93,16 @@ From @rajiteh-
 pgrep -f /kubelet | xargs -I{} bash -c 'cat /proc/{}/task/*/stack'
 pgrep -f /kubelet | xargs -I{} bash -c 'ls -1 /proc/{}/task/ | xargs -I% bash -c "echo --- pid {} task % ---; cat
 ```
+# Procs
+View details of a running process-
+```
+$ pgrep kubelet 
+810
+$ ls -l /procs/810/fd #view all file descriptors used by the project
+$ ls -l /procs/810/exe #view the executable
+$ ls -l /procs/810/cmdline #view the command line
+```
+[Source]($ ls -l /procs/810/exe #view trhe executable)
 
 # Awesome References
 
