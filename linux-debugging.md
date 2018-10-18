@@ -107,7 +107,18 @@ $ ls -l /procs/810/cmdline #view the command line
 # TCP Dump (tcpdump)
 ```
 $ tcpdump -i any port 53 <-- listen on any interface at port 53 (TCP port)
+$ sudo tcpdump -D
+1.lxcbr0
+2.docker0
+3.bluetooth0 (Bluetooth adapter number 0)
+4.nflog (Linux netfilter log (NFLOG) interface)
+5.nfqueue (Linux netfilter queue (NFQUEUE) interface)
+6.eth3
+7.any (Pseudo-device that captures on all interfaces)
+8.lo [Loopback]
+$ tcpdump -i eth0 port 53 # capture packets on a the eth0 device
 ```
+
 [Source](https://jvns.ca/blog/2017/06/26/3-screencasts/)
 # Awesome References
 
