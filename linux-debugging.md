@@ -88,6 +88,11 @@ Two approaches described [here](https://blog.wnohang.net/index.php/2015/05/05/de
 
 ## Force a stack trace to be logged
 [Force stack trace](https://docs.docker.com/config/daemon/#force-a-stack-trace-to-be-logged)
+From @raj.perera-
+```
+pgrep -f /kubelet | xargs -I{} bash -c 'cat /proc/{}/task/*/stack'
+pgrep -f /kubelet | xargs -I{} bash -c 'ls -1 /proc/{}/task/ | xargs -I% bash -c "echo --- pid {} task % ---; cat
+```
 
 # Awesome References
 
