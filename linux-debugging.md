@@ -1,3 +1,7 @@
+# strace
+Debug all the system calls made by a program. Slows down a program, as it pauses the program before and after each system call.
+System [calls](http://www.brendangregg.com/blog/2014-05-11/strace-wow-much-syscall.html)
+
 # Coredump
 
 A snapshot of a processes memory and registers at a certain execution point.
