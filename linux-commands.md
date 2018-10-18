@@ -55,8 +55,8 @@ $ tail -f --pid=1234 /home/usr/myfile
 $ tail -f --pid=1234 /dev/null # Make tail command quit when the PID 1234 dies, useful to wait on a process to terminate.
 ```
 
-Check Host Is Up
-----------------
+Check Host Is Up/ Common Ports Available
+----------------------------------------
 ```
 $ nmap c3.domain.com
 
