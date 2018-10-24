@@ -1,3 +1,15 @@
+# Kubelet Design
+Kublet interacts with the host underlying Container runtime vai the CRI (Container Runtime Interface), which is any of -
+* docker
+* rkt
+* runC - a cli tool for spawning and running containers which meet OCI specification
+* any OCI (Open Container Initiative) runtime-spec implementation
+  * OCI includes two specifications
+    * Runtime Specification - which defines how to access a [filesystem bundle](https://github.com/opencontainers/runtime-spec/blob/master/bundle.md) unpacked on disk
+    * Image Specification - defines how to create an OCI image
+
+
+
 # Securing K8s
 
 * Setup k8s cluster to use TLS between nodes.
