@@ -2,7 +2,7 @@
 Kublet interacts with the host underlying Container runtime via the CRI (Container Runtime Interface), which is any of -
 * docker
 * rkt
-* runC - a cli tool for spawning and running containers which meet OCI specification
+* runC - a cli tool for spawning and running containers which meet OCI specification, OCI reference implementation
 * any OCI (Open Container Initiative) runtime-spec implementation
   * OCI includes two specifications
     * Runtime Specification - which defines how to access a [filesystem bundle](https://github.com/opencontainers/runtime-spec/blob/master/bundle.md) unpacked on disk
@@ -10,7 +10,8 @@ Kublet interacts with the host underlying Container runtime via the CRI (Contain
 
 The CRI is a plugin interface which allows the kubelet to work with any of the support container runtimes, without the need to recompile itself.
 Kubelet <-> CRI shim <-> Container Runtime <-> Container(s)
-[Design](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
+
+[CRI Design](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
 
 
 # Securing K8s
