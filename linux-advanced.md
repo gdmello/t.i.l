@@ -11,6 +11,7 @@ Linux provides the following [namespaces](http://man7.org/linux/man-pages/man7/n
      UTS         CLONE_NEWUTS      Hostname and NIS domain name
        
 [PID Namespace](http://man7.org/linux/man-pages/man7/pid_namespaces.7.html)
+
 [Linux Kernel Namespaces](http://jancorg.github.io/blog/2015/01/05/linux-kernel-namespaces-pt-i/)
 
 ## Enter a Namespace
