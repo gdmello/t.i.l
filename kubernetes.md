@@ -13,6 +13,33 @@ Kubelet <-> CRI shim <-> Container Runtime <-> Container(s)
 
 [CRI Design](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
 
+```
+                                                                                       +--------------+                    
+                                                                                       |              |                    
+                                                                                    -->| containerd   |                    
+                     +------------------------------------+                     ---/   +--------+-----+                    
+                     |        cri-containerd              |                ----/           /> <-\                          
+                     |                                    |            ---/             /--      ----\                     
+                     |                                    |       ----/+--------------/------------------\----------------+
+                     |     +---------+                    |  ----/     |      +-----<-----+           +----->-----+       |
+                     |     | image   |<----->containerd  ---/          |      | containerd|           |containerd |       |
++----------+         |     | service |     ->client   <-/ |            |      | shim      |           |shim       |       |
+|          |     ---->     +---------+  --/               |            |      +-----^-----+           +-----^-----+       |
+| Kubelet  |<---/    |     +---------+</    +------+      |            |            |                       \             |
+|          |         |     | runtime |<----->ocicni|      |            |    +-------|------------------------|--------+   |
++----------+         |     | service |      +---<--+      |            |    | +-----v-----+          +-------v------+ |   |
+                     |     +---------+           -\       |            |    | | pause/    |          | container A  | |   |
+                     |                             \      |            |    | | sandbox   |          | (service/app)| |   |
+                     |                              -\    |            |    | | container |          +--------------+ |   |
+                     +---------------------------------\--+            |    | +-----------+                           |   |
+                                                        \              |    |            Pod A namespace              |   |
+                                                         -\            |    +-----------------------------------------+   |
+                                                      +---->---+       |                                                  |
+                                                      |  CNI   |       |                Pod A cgroups                     |
+                                                      |        |       +--------------------------------------------------+
+                                                      +--------+                                                           
+```
+[Source](https://kubernetes.io/blog/2017/11/containerd-container-runtime-options-kubernetes/)
 
 # Securing K8s
 
