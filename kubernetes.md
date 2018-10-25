@@ -56,4 +56,5 @@ Kubelet <-> CRI shim <-> Container Runtime <-> Container(s)
 
 # Useful References
 
-https://caylent.com/50-useful-kubernetes-tools/
+[Useful Kubernetes Tools](https://caylent.com/50-useful-kubernetes-tools/)
+[Pods - Internals](https://www.ianlewis.org/en/what-are-kubernetes-pods-anyway) <- Excellent!!
