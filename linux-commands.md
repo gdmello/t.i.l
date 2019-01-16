@@ -46,6 +46,10 @@ default via 10.203.0.1 dev eth3  proto static
 172.17.0.0/16 dev docker0  proto kernel  scope link  src 172.17.0.1 
 172.18.0.0/16 dev br-4433db5330c8  proto kernel  scope link  src 172.18.0.1 
 ```
+View Route Statistics
+---------------------
+
+[mtr](https://github.com/traviscross/mtr) combines `traceroute` and `ping` to display statistics about each hop to reach a destination host and sends ICMP packets to each host to determine quality of the link.
 
 Tail Process Ids
 ----------------
