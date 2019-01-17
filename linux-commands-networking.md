@@ -1,5 +1,6 @@
 Determine Packet Route
 ----------------------
+Perform an actual [lookup](https://events.static.linuxfound.org/sites/events/files/slides/2016%20-%20Linux%20Networking%20explained_0.pdf) in the Kernel -
 ``` bash
 $ ip route 10.70.70.11
 10.70.70.11 via 10.103.10.11 dev eth3  src 10.103.10.112 
