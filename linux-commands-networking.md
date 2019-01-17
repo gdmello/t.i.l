@@ -1,3 +1,11 @@
+Determine Packet Route
+----------------------
+``` bash
+$ ip route 10.70.70.11
+10.70.70.11 via 10.103.10.11 dev eth3  src 10.103.10.112 
+    cache
+```
+
 View Routes (Useful to check if a program appends to routes, like vpn/ docker-compose etc)
 ------------------------------------------------------------------------------------------
 ``` bash
