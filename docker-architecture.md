@@ -64,3 +64,6 @@ $ ps axjf | grep docker
 ```
 
 Evident to see `dockerd -> docker-containerd -> docker-containerd-shim`, where `docker-containerd` & `docker-containerd-shim` are docker wrappers around `containerd` & `containerd-shim`.
+
+# Docker Layers
+https://stackoverflow.com/questions/43070640/how-to-link-docker-images-to-their-composing-layers-on-the-disk
