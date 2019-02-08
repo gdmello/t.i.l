@@ -1,6 +1,6 @@
 CPU Info
 --------
-
+`lscpu`-
 ```
 $ lscpu
 Architecture:          x86_64
