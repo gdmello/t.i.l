@@ -9,8 +9,8 @@
 * [Julia Evans - Kubernetes](https://jvns.ca/categories/kubernetes/)
 * [Learning Web Development? These Skills Will Make You Stand Out](http://fullbit.ca/learning-web-development-stand-out/)
 # Linux
-[Linux Permissions Basics and How to Use Umask on a VPS](https://www.digitalocean.com/community/tutorials/linux-permissions-basics-and-how-to-use-umask-on-a-vps)
-[TCP SYN ](https://blog.cloudflare.com/syn-packet-handling-in-the-wild/)
+*[Linux Permissions Basics and How to Use Umask on a VPS](https://www.digitalocean.com/community/tutorials/linux-permissions-basics-and-how-to-use-umask-on-a-vps)
+*[TCP SYN ](https://blog.cloudflare.com/syn-packet-handling-in-the-wild/)
 # Jobs
 * [Job Hound](https://jobhound.io/users/new)
 
