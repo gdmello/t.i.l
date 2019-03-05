@@ -55,3 +55,19 @@ PORT     STATE  SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 4.66 seconds
 ```
+
+View All Sockets
+----------------
+```
+$ ss -s
+Total: 2738 (kernel 0)
+TCP:   783 (estab 62, closed 693, orphaned 0, synrecv 0, timewait 3/0), ports 0
+
+Transport Total     IP        IPv6
+*	  0         -         -        
+RAW	  0         0         0        
+UDP	  38        33        5        
+TCP	  90        83        7        
+INET	  128       116       12       
+FRAG	  0         0         0       
+```
