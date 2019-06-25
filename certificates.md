@@ -75,7 +75,7 @@ A pem file can contain a number of certificates and a key, [source](http://how2s
 Sources
 =======
 * https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
-* http://how2ssl.com/articles/openssl_commands_and_tips/
+* https://www.sslshopper.com/article-most-common-openssl-commands.html
 * https://www.scientificcomputing.com/blog/2007/11/understanding-digital-certificates-beginner%E2%80%99s-guide
 * http://www.tech-faq.com/understanding-certificate-authorities.html
 
