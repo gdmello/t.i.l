@@ -8,3 +8,8 @@ Full Error:
     openssl s_client -verify_hostname www.example.com -connect example.com:443
   
   [source](https://www.freecodecamp.org/news/openssl-command-cheatsheet-b441be1e8c4a/)
+
+
+### Display the Apiserver Certificate
+
+        openssl x509 -in /etc/kubernetes/ssl/kube-apiserver.pem -noout -text
