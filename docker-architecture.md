@@ -65,5 +65,13 @@ $ ps axjf | grep docker
 
 Evident to see `dockerd -> docker-containerd -> docker-containerd-shim`, where `docker-containerd` & `docker-containerd-shim` are docker wrappers around `containerd` & `containerd-shim`.
 
+# uid and gid in docker containers
+
+* The Linux kernel only recognizes userids and groupids instead of usernames and groupnames, which are managed at a higher level by `/etc/passwd` or `Active Directory` etc.
+* All docker containers are run by the linux kernel of the docker host
+* So all containers must run as a known user on the docker host
+* When a docker container is run with a particular user specified in it's Dockerfile, that user is mapped to a user on the docker host via the userid.
+[Reference](https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf)
+
 # Docker Layers
 https://stackoverflow.com/questions/43070640/how-to-link-docker-images-to-their-composing-layers-on-the-disk
