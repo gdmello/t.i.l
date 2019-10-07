@@ -1,3 +1,26 @@
+Issue - debug files on a pod with no terminal access
+----------------------------------------------------
+Cannot exec into a pod to run a command:
+```
+$ kcr -n kube-system exec  coredns-bdffbc777-lq9kw cat /etc/resolv.conf
+OCI runtime exec failed: exec failed: container_linux.go:345: starting container process caused "exec: \"ls\": executable file not found in $PATH": unknown
+command terminated with exit code 126
+```
+SSH into the host running said pod, and look into the containers layers:
+```
+$ docker ps | grep -i coredns
+f66d796d8273        eb516548c180                             "/coredns -conf /etc…"   4 hours ago         Up 4 hours                              k8s_coredns_coredns-bdffbc777-gc76x_kube-system_91ae6c75-e913-11e9-9a5c-8aa4cb60c64e_0
+$ cat /data/docker/containers/f66d796d827329d00e8cb77c7fa1a66b8fdc55f1cf28c748fc3bc219c255c70d/config.v2.json | grep -i resolv.conf
+...
+"ResolvConfPath":"/data/docker/containers/7f93d7fdb9b7c7db8c46af250ba31cb4358a184c644086b3c0a178534f8a3510/resolv.conf"
+...
+$ cat /data/docker/containers/7f93d7fdb9b7c7db8c46af250ba31cb4358a184c644086b3c0a178534f8a3510/resolv.conf
+nameserver 10.20.321.16
+nameserver 10.20.34.99
+search domain.com toronto.blah.com
+options timeout:1 attempts:5
+```
+
 Issue - `kubectl` connectivity issues to apiserver
 --------------------------------------------------
 This error - 
