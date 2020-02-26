@@ -79,15 +79,15 @@ Assuming communication from hostA -> hostB on port 8472
 [hostB] $ vi /etc/services
 # Add this line
 # otv             8472/udp                # Overlay Transport Virtualization (OTV)
-[hostB]$ iptables -A INPUT -p tcp --dport 8472 -j ACCEPT
-[hostA]$ iptables -A OUTPUT -p tcp --dport 8472 -j ACCEPT
+[hostB]$ iptables -A INPUT -p udp --dport 8472 -j ACCEPT
+[hostA]$ iptables -A OUTPUT -p udp --dport 8472 -j ACCEPT
 ```
 From this point onwards, to enable bi-directional replication
 ```
 [hostA]$ vi /etc/services
 # Add this line
 # otv             8472/udp                # Overlay Transport Virtualization (OTV)
-[hostA]$ iptables -A INPUT -p tcp --dport 8472 -j ACCEPT
-[hostB]$ iptables -A OUTPUT -p tcp --dport 8472 -j ACCEPT
+[hostA]$ iptables -A INPUT -p udp --dport 8472 -j ACCEPT
+[hostB]$ iptables -A OUTPUT -p udp --dport 8472 -j ACCEPT
 ```
 
