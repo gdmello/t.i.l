@@ -87,7 +87,7 @@ From this point onwards, to enable bi-directional replication
 [hostA]$ vi /etc/services
 # Add this line
 # otv             8472/udp                # Overlay Transport Virtualization (OTV)
-[hostA]$ iptables -A INPUT -p tcp --dport 8472 -j ACCEPT #hostA
-[hostB]$ iptables -A OUTPUT -p tcp --dport 8472 -j ACCEPT #hostB
+[hostA]$ iptables -A INPUT -p tcp --dport 8472 -j ACCEPT
+[hostB]$ iptables -A OUTPUT -p tcp --dport 8472 -j ACCEPT
 ```
 
