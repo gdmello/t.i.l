@@ -33,3 +33,18 @@ Octal value : Permission
 In symbolic format it is -
 `umask u=rwx,g=,o=`
 https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html
+
+Create A File Without Vi/Vim
+----------------------------
+```
+$ cat > deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+$ ls 
+-rw-rw-r-- 1 gavin.dmello gavin.dmello 98 Feb 28 11:29 deployment.yaml
+```
+[Source](https://www.howtogeek.com/199687/how-to-quickly-create-a-text-file-using-the-command-line-in-linux/)
