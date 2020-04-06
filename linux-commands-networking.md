@@ -91,3 +91,17 @@ From this point onwards, to enable bi-directional replication
 [hostB]$ iptables -A OUTPUT -p udp --dport 8472 -j ACCEPT
 ```
 
+Use Another Host As A Proxy Via SSH (Http Over SSH)
+---------------------------------------------------
+Locally access a rabbitmq management console, via a remote host which has access to the rabbitmq node.
+
+Bind port local port 8080 to a hostname and port on the remote server, ie. bind locla port 8080 to  <RABBITMQ_MANAGEMENT_HOSTNAME> and port 15672 on <REMOTE_HOST>
+```
+ssh -L 8080:<RABBITMQ_MANAGEMENT_HOSTNAME>:15672 -o 'PubKeyAuthentication=no' <REMOTE_HOST>
+<REMOTE_HOST> $
+```
+
+Now access the console via a web browser as-
+```
+curl https://localhost:8080
+```
