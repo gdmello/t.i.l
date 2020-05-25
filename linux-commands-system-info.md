@@ -25,3 +25,9 @@ L2 cache:              256K
 L3 cache:              6144K
 NUMA node0 CPU(s):     0-7
 ```
+OS Info
+-------
+```
+$ cat /etc/centos-release
+CentOS Linux release 7.7.1908 (Core)
+```
