@@ -9,6 +9,21 @@ Networking
   * Bonding
   * Veth - virtual ethernet cable
   * Bridge - virtual switch
+ * [Routing](https://opensource.com/business/16/8/introduction-linux-network-routing)
+   * The routing table sets the source and destination for each TCP packet
+   * In Linux, the routing table can be viewed with
+    ```bash
+    $ route -n
+    Kernel IP routing table
+    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    0.0.0.0         0.0.0.0         0.0.0.0         U     50     0        0 tun0
+    0.0.0.0         192.168.1.1     0.0.0.0         UG    100    0        0 enx8049710fae4d
+    ```
+    * The default gateway is always denoted by `0.0.0.0` in the destination with the `-n` flag
+    * The default gateway is also denoted by the `G` flag in the `Flags` column.
+    * `Iface` represents the outbound Network Interface Card (NIC)
+    * The `Genmask` column represents the network mask
+    * The default gateway has a netmask of `0.0.0.0` to indicate all packets not addressed to the local network or any other outbound routerwill be addressed to the default gateway. 
 
 Resources
 ---------
