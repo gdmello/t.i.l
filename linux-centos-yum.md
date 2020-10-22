@@ -78,7 +78,7 @@ $ ll /etc/yum.repos.d/ | grep -i docker
 -rw-r--r--. 1 root root 1950 Oct 22 14:52 docker-ce.repo
 $ sudo rm -rf /etc/yum.repos.d/docker-ce.repo
 ```
-Clean cache
+Clean cache:
 ```
 $ sudo yum clean cache
 ```
