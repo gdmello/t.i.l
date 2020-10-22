@@ -54,3 +54,25 @@ docker-ce.x86_64                      3:19.03.11-3.el7                          
 docker-ce.x86_64                      3:19.03.12-3.el7                              docker-ce-stable 
 docker-ce.x86_64                      3:19.03.13-3.el7                              docker-ce-stable
 ```
+
+# Remove a Package & its Repository Completely From a System
+```
+# Remove/Uninstall the package "docker-ce" & "docker-ce-cli"
+$ yum erase -y docker-ce docker-ce-cli
+# Remove package version specification from version lock, if applicable
+$ sudo yum versionlock delete docker-*
+Loaded plugins: fastestmirror, versionlock
+Repository 'docker-ce-edge' is missing name in configuration, using id
+Deleting versionlock for: 3:docker-ce-19.03.1-3.el7.*
+Deleting versionlock for: 1:docker-ce-cli-19.03.1-3.el7.*
+versionlock deleted: 2
+
+# Remove the repository
+$ yum repolist | grep docker
+Repository 'docker-ce-edge' is missing name in configuration, using id
+docker-ce-stable/7/x86_64     Docker CE Stable - x86_64                       82
+$ ll /etc/yum.repos.d/ | grep -i docker
+-rw-r--r--. 1 root root 1950 Oct 22 14:52 docker-ce.repo
+$ sudo rm -rf /etc/yum.repos.d/docker-ce.repo
+yum versionlock
+```
