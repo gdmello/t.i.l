@@ -24,4 +24,4 @@ Great [source](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 
 # Change Local Commit Author
 
-        git commit --author <first.last@domain.com> --amend
+    git commit --author <first.last@domain.com> --amend
