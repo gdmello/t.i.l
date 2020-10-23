@@ -1,5 +1,4 @@
-Modify Old Commit Messages (Already Pushed)
-===========================================
+# Modify Old Commit Messages (Already Pushed)
 1. go back 20 commits in history, in interactive mode
     
         git rebase -i HEAD~20
@@ -22,3 +21,7 @@ Modify Old Commit Messages (Already Pushed)
         git push --force
 
 Great [source](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
+# Change Local Commit Author
+
+        git commit --author <first.last@domain.com> --amend
