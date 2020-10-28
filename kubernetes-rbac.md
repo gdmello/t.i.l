@@ -23,3 +23,4 @@ Sources:
 * [Managing TLS in a cluster](https://v1-16.docs.kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
 * [Granting user access to your Kubernetes cluster ](https://www.openlogic.com/blog/granting-user-access-your-kubernetes-cluster)
 * [Configure RBAC access in your Kubernetes Cluster ](https://docs.bitnami.com/tutorials/configure-rbac-in-your-kubernetes-cluster/)
+* [Access Kubernetes API With Client Certificates](https://codefarm.me/2019/02/01/access-kubernetes-api-with-client-certificates/)
