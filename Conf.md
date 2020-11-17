@@ -1,0 +1,1 @@
+[Finalizers](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers) - Pre-delete Hooks, allowing for the deletion of external dependencies before a K8s resource is deleted. Attached to Controllers, can create custom finalizers with a custom controller. 
