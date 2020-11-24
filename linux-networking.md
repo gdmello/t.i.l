@@ -63,6 +63,7 @@ DNSSEC Verdicts
                Bogus: 0
        Indeterminate: 0
 ```
+[source](https://vitux.com/how-to-flush-dns-cache-on-ubuntu/)
 
 Resources
 ---------
