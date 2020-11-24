@@ -24,6 +24,45 @@ Networking
     * `Iface` represents the outbound Network Interface Card (NIC)
     * The `Genmask` column represents the network mask
     * The default gateway has a netmask of `0.0.0.0` to indicate all packets not addressed to the local network or any other outbound routerwill be addressed to the default gateway. 
+* Clear DNS Cache
+```
+  $ systemd-resolve --statistics
+DNSSEC supported by current servers: no
+
+Transactions
+Current Transactions: 0
+  Total Transactions: 325
+
+Cache
+  Current Cache Size: 156
+          Cache Hits: 154
+        Cache Misses: 215
+
+DNSSEC Verdicts
+              Secure: 0
+            Insecure: 0
+               Bogus: 0
+       Indeterminate: 0
+
+  $ sudo systemd-resolve --flush-caches
+  $ gavin.dmello@pts-gdmell5 [13:41:34] ~ $ systemd-resolve --statistics
+DNSSEC supported by current servers: no
+
+Transactions
+Current Transactions: 0
+  Total Transactions: 326
+
+Cache
+  Current Cache Size: 0
+          Cache Hits: 154
+        Cache Misses: 216
+
+DNSSEC Verdicts
+              Secure: 0
+            Insecure: 0
+               Bogus: 0
+       Indeterminate: 0
+```
 
 Resources
 ---------
