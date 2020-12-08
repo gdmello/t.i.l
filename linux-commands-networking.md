@@ -105,3 +105,44 @@ Now access the console via a web browser as-
 ```
 curl https://localhost:8080
 ```
+
+# Clear DNS Cache
+```
+  $ systemd-resolve --statistics
+DNSSEC supported by current servers: no
+
+Transactions
+Current Transactions: 0
+  Total Transactions: 325
+
+Cache
+  Current Cache Size: 156
+          Cache Hits: 154
+        Cache Misses: 215
+
+DNSSEC Verdicts
+              Secure: 0
+            Insecure: 0
+               Bogus: 0
+       Indeterminate: 0
+
+  $ sudo systemd-resolve --flush-caches
+  $ gavin.dmello@pts-gdmell5 [13:41:34] ~ $ systemd-resolve --statistics
+DNSSEC supported by current servers: no
+
+Transactions
+Current Transactions: 0
+  Total Transactions: 326
+
+Cache
+  Current Cache Size: 0
+          Cache Hits: 154
+        Cache Misses: 216
+
+DNSSEC Verdicts
+              Secure: 0
+            Insecure: 0
+               Bogus: 0
+       Indeterminate: 0
+```
+[source](https://vitux.com/how-to-flush-dns-cache-on-ubuntu/)
