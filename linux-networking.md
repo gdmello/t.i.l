@@ -64,6 +64,7 @@ DNSSEC Verdicts
        Indeterminate: 0
 ```
 [source](https://vitux.com/how-to-flush-dns-cache-on-ubuntu/)
+
 Resources
 ---------
 [Kubernetes Networking Links](https://github.com/nleiva/kubernetes-networking-links)
