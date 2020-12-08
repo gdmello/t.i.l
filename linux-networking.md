@@ -24,7 +24,7 @@ Networking
     * `Iface` represents the outbound Network Interface Card (NIC)
     * The `Genmask` column represents the network mask
     * The default gateway has a netmask of `0.0.0.0` to indicate all packets not addressed to the local network or any other outbound routerwill be addressed to the default gateway. 
-* Clear DNS Cache
+# Clear DNS Cache
 ```
   $ systemd-resolve --statistics
 DNSSEC supported by current servers: no
@@ -64,7 +64,6 @@ DNSSEC Verdicts
        Indeterminate: 0
 ```
 [source](https://vitux.com/how-to-flush-dns-cache-on-ubuntu/)
-
 Resources
 ---------
 [Kubernetes Networking Links](https://github.com/nleiva/kubernetes-networking-links)
