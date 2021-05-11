@@ -65,6 +65,8 @@ DNSSEC Verdicts
 ```
 [source](https://vitux.com/how-to-flush-dns-cache-on-ubuntu/)
 
+* [Packet Errors, packet Discards, Packet Loss](https://www.auvik.com/franklyit/blog/packet-errors-packet-discards-packet-loss/)
+
 Resources
 ---------
 [Kubernetes Networking Links](https://github.com/nleiva/kubernetes-networking-links)
