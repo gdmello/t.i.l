@@ -32,3 +32,7 @@ $ sudo openssl x509 -req -days 365 -in /etc/ssl/mydomain.com/mydomain.com.csr -s
 # create a PEM file, which is a combination of tke signing key and certificate files
 $ sudo cat /etc/ssl//mydomain.com/mydomain.com.crt /etc/ssl/mydomain.com/mydomain.com.key | sudo tee /etc/ssl/mydomain.com/mydomain.com.pem
 ```
+
+Source
+======
+[Using SSL certificates with Haproxy](https://serversforhackers.com/c/using-ssl-certificates-with-haproxy)
