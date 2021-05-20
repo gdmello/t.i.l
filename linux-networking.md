@@ -1,5 +1,6 @@
 Networking
 ----------
+* Send Packet to External IP -> Route (choose which interface) -> Interface 
 * [Basic walkthrough](https://www.slideshare.net/ThomasGraf5/linuxcon-2015-linux-kernel-networking-walkthrough)
   * TCP fast open - `net.ipv4.tcp_fastopen`
   * Packet through the network stack (kernel space) explained
