@@ -21,5 +21,7 @@ I/O streams have a static file descriptor number -
 
 `2>&1` - redirect stderr `2>` to the what stdout is currently pointing to (a reference)
 
+`&>` - same as above, redirect stderr to what stdout is currently pointing to
+
 # Source
 [LinuxJouney.com](https://linuxjourney.com/lesson/stderr-standard-error-redirect)
