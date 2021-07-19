@@ -40,7 +40,21 @@ E: PARTN=1
 E: SUBSYSTEM=block
 E: TAGS=:systemd:
 E: USEC_INITIALIZED=1378820
+```
 
+# View Info On Device By Type
+
+```
+lsusb # list USB devices
+lspci # list PCI (Peripheral Component Interconnect) devices
+lsscsi # list SCSI devices
+```
+
+# Hard disk Nomenclature
+```
+/dev/hdd # First hard disk "a" # First hard disk "a"
+/dev/hdd # Fourth hard disk "d"
+/dev/hdd3 # Fourth hard disk "d", third partition
 ```
 
 [Source](https://linuxjourney.com/lesson/udev)
