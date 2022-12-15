@@ -21,5 +21,5 @@ The bit in a binary number with the largest value, usually the number farthest t
 
 
 # References
-[Big O Cheat Sheet – Time Complexity Chart - Joel Olawanle](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/)
-[most significant bit (MSB) - Robert Sheldon](https://www.techtarget.com/whatis/definition/most-significant-bit-or-byte)
+* [Big O Cheat Sheet – Time Complexity Chart - Joel Olawanle](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/)
+* [most significant bit (MSB) - Robert Sheldon](https://www.techtarget.com/whatis/definition/most-significant-bit-or-byte)
