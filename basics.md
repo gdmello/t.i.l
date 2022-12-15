@@ -28,3 +28,4 @@ Endianness is the term to describe the order in which the sequence of bytes is s
 # References
 * [Big O Cheat Sheet – Time Complexity Chart - Joel Olawanle](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/)
 * [most significant bit (MSB) - Robert Sheldon](https://www.techtarget.com/whatis/definition/most-significant-bit-or-byte)
+* [big-endian and little-endian](https://www.techtarget.com/searchnetworking/definition/big-endian-and-little-endian)
