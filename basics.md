@@ -19,6 +19,11 @@ The high order byte is the byte that contains the largest portion of the number.
 # Most Significant Bit (MSB)
 The bit in a binary number with the largest value, usually the number farthest to the left, as the High order byte (above). e.g - in the binary number 10001, the MSB is 1, while the LSB is the 1 (the 1 farthest to the right). In this binary number 100100, the MSB is 1 while the LSB is 0.
 
+# Big Endian
+MSB, High/Low order bytes are useful especially when transmitting data. In a network transmission sequence, the highest order byte could be sent first (big-endian - the sequence starts with the MSB, while little-endian the sequence starts with the LSB). 
+
+Endianness is the term to describe the order in which the sequence of bytes is stored in computer memory. [Source](https://www.techtarget.com/searchnetworking/definition/big-endian-and-little-endian)
+
 
 # References
 * [Big O Cheat Sheet – Time Complexity Chart - Joel Olawanle](https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/)
