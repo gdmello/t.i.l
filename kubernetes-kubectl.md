@@ -39,5 +39,6 @@ spec:
         resources: {}
 status: {}
 ```
-[Source](https://foxutech.medium.com/how-to-create-and-change-the-kubernetes-yaml-using-dry-run-and-edit-5975d77e8df2)
+[How to create and change the Kubernetes yaml using dry-run and edit](https://foxutech.medium.com/how-to-create-and-change-the-kubernetes-yaml-using-dry-run-and-edit-5975d77e8df2)
+
 [Kubectl API Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
