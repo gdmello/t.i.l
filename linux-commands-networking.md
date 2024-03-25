@@ -56,6 +56,53 @@ PORT     STATE  SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 4.66 seconds
 ```
 
+View Current Network Connections
+--------------------------------
+```
+$ resolvectl
+Global
+         Protocols: -LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+  resolv.conf mode: stub
+Current DNS Server: 45.90.28.0#76adf6.dns.nextdns.io
+       DNS Servers: 45.90.28.0#76adf6.dns.nextdns.io 2a07:a8c0::#76adf6.dns.nextdns.io 45.90.30.0#76adf6.dns.nextdns.io 2a07:a8c1::#76adf6.dns.nextdns.io
+
+Link 2 (enx0050b60f6bb3)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+
+Link 3 (wlp0s20f3)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+
+Link 4 (docker0)
+Current Scopes: none
+     Protocols: -DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+
+Link 5 (tun0)
+    Current Scopes: DNS
+         Protocols: +DefaultRoute +LLMNR -mDNS +DNSOverTLS DNSSEC=no/unsupported
+Current DNS Server: 192.168.<X>.<Y>
+       DNS Servers: 192.168.<X>.<Y>
+        DNS Domain: <CUSTOM_DOMAIN>.com ~.
+
+```
+also via `nmcli`
+```
+$ nmcli c
+NAME                UUID                                  TYPE      DEVICE
+VPN                 29623885-efe3-4cfc-9e14-bca8e694cb4a  vpn       enx0070b70f7bb3 
+tun0                56b44c3e-b6bb-427b-a51d-9ada931ab6f4  tun       tun0            
+docker0             ff8bfff4-650b-4031-b454-d35167b10a76  bridge    docker0         
+Wired connection 1  d8a5dc88-7233-3b57-b5cf-e0c707ad6633  ethernet  enx0070b70f7bb3 
+```
+
+Modify DNS Priority
+-------------------
+```
+$ nmcli -p connection modify "<CONNECTION_NAME>" ipv4.dns-priority -100
+```
+
+
 View All Sockets
 ----------------
 ```
